@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+  
+
+
+    <!-- <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title signup">Signup Form</div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required>
+                    </div><br>
+                    <div class="pass-link"><a href="#">Forgot password?</a></div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                </form>
+                <form action="#" class="signup">
+                    <div class="field">
+                        <input type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Signup">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="main">
+        <div class="container">
+            <h1>Login</h1>
+            <form id="otpForm">
+                <!-- <label for="phone">Phone Number :</label> -->
+                <input type="text" id="phone" placeholder="Enter your phone number" required><br><br>
+                <button type="button" id="sendOtpBtn">Send OTP</button>
+                <div id="otpSection" style="display: none;">
+                    <!-- <label for="otp">Enter OTP</label> -->
+                    <input type="text" id="otp" placeholder="Enter OTP" required><br><br>
+                    <!-- <a id="resendOtpBtn" disabled>Resend OTP</a><br><br> -->
+                     <a href="#" id="resendOtpBtn" disabled>Resend OTP</a><br><br>
+                    <button type="button" id="verifyOtpBtn">Verify OTP</button><br><br>
+                </div>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="js/responsive.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/otp.js"></script>
+</body>
+
+</html>
